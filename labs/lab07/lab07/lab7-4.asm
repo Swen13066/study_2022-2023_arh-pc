@@ -25,9 +25,11 @@ mul ebx			;умножение на 18
 mov ebx,6
 div ebx			;деление на 6
 
+mov ebx, eax
+
 mov eax,msg
 call sprint 
-mov eax,edx
+mov eax,ebx
 call iprintLF
 
 call quit
